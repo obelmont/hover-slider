@@ -1,0 +1,42 @@
+.hoverslide {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 75px;
+    max-width: 200px;
+/*    @include grid-media($smalldesktop){
+        margin-bottom: 9vh;
+    }*/
+}
+
+.hoverslide .hs__slide {
+    position: relative;
+    display: none;
+    top: 0;
+    left: 0;
+    img{
+        animation: none;
+    }
+}
+
+
+.hoverslide img:first-child {
+    display: block;
+}
+.hoverslide__hcontainer {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: table;
+    top: 0;
+    left: 0;
+}
+.hoverslide__hcontainer div {
+    display: table-cell;
+    height: 100%;
+    padding-top: 66.66%;
+}
+
+.hoverslide .hs--active{
+    display: block;
+}
